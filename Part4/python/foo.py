@@ -13,19 +13,20 @@ threadLock = threading.Lock()
 def incrementingFunction():
     global i
     with threadLock:
-        for i in range(1000000):
+        for j in range(1000000):
             i += 1
 
 def decrementingFunction():
     global i
     with threadLock:
-        for i in range(1000000):
+        for j in range(1000000):
             i -= 1
 
 
 
 def main():
     # TODO: Something is missing here (needed to print i)
+    global i
 
     incrementing = Thread(target = incrementingFunction, args = (),)
     decrementing = Thread(target = decrementingFunction, args = (),)
