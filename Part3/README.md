@@ -17,7 +17,7 @@ When answering the questions, remember to use all the resources at your disposal
  
  ### Does creating concurrent programs make the programmer's life easier? Harder? Maybe both?
  (Come back to this after you have worked on part 4 of this exercise)
- > *Your answer here*
+ > It sometimes make the programmer's life easier. Especially if you have a main while loop and you need to handle every exception and case. If you don't need that, then creating a concurrent program makes the programmer's life harder. If you want to expand your program, it is easier if the program is concurrent. 
  
  ### What are the differences between processes, threads, green threads, and coroutines?
  > A thread is a part of the operating system. A green thread is scheduled by a virtual machine or runtime library. Threads run in a shared memory space, processes run in separate memory space. Threads and processes are OS-managed. Coroutines are a form of sequential processing (like functions). Only one is executing at a given time. 
